@@ -1,0 +1,25 @@
+<h1>
+  Registration
+</h1>
+  <div class="forms">
+    <label>Username:
+    <input #username/>
+    </label>
+  </div>
+  <div class="forms">
+    <label>Password:
+      <input type="password" #password/>
+    </label>
+  </div>
+  <div class="forms">
+    <label>First Name:
+      <input #firstName/>
+    </label>
+  </div>
+  <div class="forms">
+    <label>Last Name:
+      <input #lastName/>
+    </label>
+  </div>
+  <button (click)="add(username.value,password.value,firstName.value,lastName.value)"> Submit
+  </button>
